@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF00"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/sms_block_record" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="9">
+        <ListView
+            android:id="@+id/lv_sms_block_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </ListView>
+
+    </LinearLayout>
+    
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1">
+	    <Button 
+	        android:id="@+id/btn_empty_sms_list"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="5dp"
+	        android:onClick="empty_sms_list"
+	        android:layout_weight="2"
+	        android:text="@string/empty_sms_list"/>
+
+	    <Button
+	        android:id="@+id/btn_sms_block_setting"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="5dp"
+	        android:onClick="sms_block_setting"
+	        android:layout_weight="2"
+	        android:text="@string/sms_block_setting" />
+		<Button 
+		    android:id="@+id/btn_sms_refresh"
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="2"
+		    android:onClick="sms_refresh"
+		    android:text="@string/refresh"/>
+	    <Button
+	        android:id="@+id/btn_sms_block_return"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_marginRight="5dp"
+	        android:layout_weight="2"
+	        android:onClick="sms_block_return"
+	        android:text="@string/block_setting_return" />
+	    
+	</LinearLayout>
+    
+</LinearLayout>

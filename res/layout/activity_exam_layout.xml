@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+   	>
+     
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#54FF9F" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="8dp"
+            android:text="@string/sd_availableBlocks"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_sd_availableBlocks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView3"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/textView2"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/tv_sd_availableBlocks"
+            android:text="@string/sd_blockCount" />
+
+        <TextView
+            android:id="@+id/tv_sd_blockCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignLeft="@+id/tv_sd_availableBlocks"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="8dp"
+            android:text="@string/sd_block_size" />
+
+        <TextView
+            android:id="@+id/tv_sd_block_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignLeft="@+id/tv_sd_blockCount"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView5"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="8dp"
+            android:text="@string/sd_totalSize" />
+
+        <TextView
+            android:id="@+id/tv_sd_totalSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignLeft="@+id/tv_sd_block_size"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/sd_info"
+            />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView5"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/textView4"
+            android:text="@string/sd_availableSize" />
+
+        <TextView
+            android:id="@+id/tv_sd_availableSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignLeft="@+id/tv_sd_totalSize"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/textView6"
+            android:layout_alignRight="@+id/textView6"
+            android:text="@string/sd_used_space" />
+
+        <TextView
+            android:id="@+id/tv_sd_usedSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView7"
+            
+            android:layout_alignLeft="@+id/tv_sd_availableBlocks"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn_back_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_sd_blockCount"
+            android:layout_alignParentRight="true"
+            android:background="#54FF9F"
+            android:text="@string/block_setting_return" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical" >
+
+        <ProgressBar
+            android:id="@+id/pb_exam"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+             />
+
+        <TextView
+            android:id="@+id/tv_exam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/scanning"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/lv_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+    
+    
+
+</LinearLayout>

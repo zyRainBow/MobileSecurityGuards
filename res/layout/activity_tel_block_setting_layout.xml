@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7FFF00"
+        android:gravity="center" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#7FFF00"
+            android:text="@string/tel_block_setting" />
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/lv_tel_block_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp" >
+    </ListView>
+	<LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button 
+            android:id="@+id/btn_tel_block_mode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="tel_block_mode"
+            android:text="@string/tel_block_mode"/>
+
+        <Button
+            android:id="@+id/btn_tel_block_setting_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="setting_return"
+            android:text="@string/block_setting_return" />
+        
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

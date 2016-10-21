@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" 
+        android:orientation="horizontal"
+        android:weightSum="8"
+        android:background="@color/gray">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_app_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher"
+                android:visibility="gone" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent" 
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appName"
+                android:textSize="20sp" 
+                android:textColor="@color/green"/>
+            
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:gravity="center">
+			<TextView
+                android:id="@+id/textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:text="@string/lock" />
+            
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/lv_app_lock_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_setting_lock_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="setting_lock_pwd"
+            android:layout_weight="1"
+            android:text="@string/setting_lock_pwd" />
+        <Button
+            android:id="@+id/btn_modify_lock_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="modify_lock_pwd"
+            android:layout_weight="1"
+            android:text="@string/modify_lock_pwd" />
+        <Button
+            android:id="@+id/btn_comfrm_lock"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="comfrm_lock"
+            android:layout_weight="1"
+            android:text="@string/ok" />
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

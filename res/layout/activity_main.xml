@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zy.mobilesafe.views.MainActivity"
+    android:weightSum="9"
+    tools:ignore="MergeRootFrame" >
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#000000" 
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_exam_scan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/main_tab_button_style"
+            android:text="@string/exam_scan" 
+            android:drawableTop="@drawable/tijian"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            />
+        
+
+        <Button
+            android:id="@+id/btn_harass_block"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/main_tab_button_style"
+            android:text="@string/harass_block" 
+            android:textStyle="bold"
+             android:drawableTop="@drawable/saorao"
+             android:textSize="10dp"/>
+
+        <Button
+            android:id="@+id/btn_flow_monitor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/main_tab_button_style"
+            android:text="@string/flow_monitor"
+            android:textStyle="bold" 
+             android:drawableTop="@drawable/gprs"
+             android:textSize="10dp"/>
+
+        <Button
+            android:id="@+id/btn_app_manage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/main_tab_button_style"
+            android:text="@string/app_manage"
+            android:textStyle="bold"
+             android:drawableTop="@drawable/app"
+            android:textSize="10dp"/>
+    </LinearLayout>
+    
+</LinearLayout>
+

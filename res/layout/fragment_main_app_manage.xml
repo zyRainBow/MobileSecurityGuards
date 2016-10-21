@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#7FFF00"
+        android:gravity="center" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#7FFF00"
+            android:drawableLeft="@drawable/app_small_icon"
+            android:text="@string/app_name" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@drawable/bg_662491"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/layout_app_lock"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="150dp"
+            android:animateLayoutChanges="true"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_app_lock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/app_lock"
+                android:drawableTop="@drawable/jiasuo"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_app_uninstall"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:animateLayoutChanges="true"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_app_uninstall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/app_uninstall"
+                android:drawableTop="@drawable/xiezai" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_apk_manage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignBottom="@+id/layout_app_lock"
+            android:layout_toRightOf="@+id/layout_app_lock"
+            android:layout_marginBottom="150dp"
+            android:animateLayoutChanges="true"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_apk_manage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/apk_manage" 
+                android:drawableTop="@drawable/guanli"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_prevent_thelf"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignTop="@+id/layout_app_lock"
+            android:layout_toRightOf="@+id/layout_app_lock"
+            android:animateLayoutChanges="true"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_prevent_thelf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/prevent_thelf" 
+                android:drawableTop="@drawable/fangdao2"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+</RelativeLayout>
